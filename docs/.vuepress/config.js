@@ -1,7 +1,6 @@
 module.exports = {
   title: '耶温博客',
-  description: '小耶温学习笔记',
-  // icon
+  description: '耶温前端学习笔记',
   head: [
     ['link', {
       rel: 'icon',
@@ -22,7 +21,6 @@ module.exports = {
     // },
     lastUpdated: '最新更新时间',
     logo: 'http://iyuwb.cn/img/wenbo.jpg',
-    // 导航栏可以下拉列表
     nav: [
       {
         text: 'Notes',
@@ -76,7 +74,6 @@ module.exports = {
         'Canvas实现两张图片合成'
       ],
       '/Notes/': [
-        // '前端学习路线',
         '个人简历',
         '前端笔记',
         'GIT相关操作方法',
@@ -88,7 +85,6 @@ module.exports = {
       ],
       '/读书笔记/': [
         '[JavaScript高级程序设计]读书笔记',
-        // '[HTTP图解]读书笔记'
       ],
       '/React/': [
         'React入门',
@@ -102,6 +98,6 @@ module.exports = {
         '在Vue2.0中使用Less与Sass',
       ],
     },
-    displayAllHeaders: true // 默认值：false 显示所有页面的标题链接
+    displayAllHeaders: true 
   }
 }
