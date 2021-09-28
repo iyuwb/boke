@@ -1,0 +1,174 @@
+// 头部链接分类
+//设置主题背景色
+a{
+color: #7a94a7
+}
+html,body,#app{
+  background-color: #f3f2ee;
+}
+#app .sidebar{
+ background-color: #f3f2ee;
+ border-right: 2px solid #eaecef;
+}
+#app .navbar{
+ background-color: #f3f2ee;
+ border-bottom: 3px solid #eaecef;
+}
+#app .navbar .links{
+ background-color: #f3f2ee;
+}
+// 编译code样式调整 rgba(211,209,209,0.5)
+// 点击查看代码
+#app .page .custom-block{
+  background-color: rgba(211,209,209,0.7)
+}
+#app .page .custom-block.tip{
+  background-color:#dee5ea;
+  border-color: #7a94a7
+}
+#app .navbar .links .nav-links a.nav-link{
+  line-height: 2rem;
+  color #444;
+  font-weight: normal;
+}
+#app .navbar .links .nav-links .nav-item{
+  padding:0 6px
+}
+// 头部搜索框
+// #app .navbar .links .nav-links{
+//  margin-left :2.5rem 
+// }
+#app .navbar .search-box input{
+ width: 12.5rem ;
+ border-radius: 0.5rem;
+}
+
+// 侧边滚动条
+#app .sidebar::-webkit-scrollbar {
+/*滚动条整体样式*/
+/*高宽分别对应横竖滚动条的尺寸*/
+  width: 5px;     
+  height: 2px;
+}
+#app .sidebar::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 10px;
+  background: #ddd;
+}
+
+// 侧边菜单
+#app .sidebar > .sidebar-links > li:not(:first-child) {
+    margin-top: 0.2rem;
+}
+#app .sidebar > .sidebar-links > li > a.sidebar-link{
+  color: #333;
+  padding-left:1.5rem;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 2;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  border-left: none
+  border-right: 0.35rem solid transparent
+}
+body::-webkit-scrollbar { 
+ width:2px;  background:#eee; border-radius:10px;
+} 
+#app .sidebar > .sidebar-links > li > a.sidebar-link.active {
+  //color: #3eaf7c;
+  //background-color: rgba(62, 175, 124, 0.1)
+  //border-right-color:  #3eaf7c;
+  border-right-color:  #7a94a7;
+  background-color: #dee5ea;
+  color:#7a94a7; 
+}
+#app .sidebar .sidebar-sub-headers{
+  padding-left:1.5rem;
+  font-size: 0.875rem;
+  line-height: 2.75;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  a{
+    color: #666;
+  }
+  a.active.sidebar-link{
+    //color: #3eaf7c;
+    color:#7a94a7;
+  }
+}
+
+// 文章内容覆盖
+// 大盒子
+#app .page .theme-default-content:not(.custom){
+ max-width: 100%
+ padding: 2rem 5rem
+}
+// 全局颜色
+#app .page .theme-default-content   {
+    color:#333
+}
+
+// 全局行高 
+#app .page .theme-default-content  p, ul, ol {
+    line-height: 2;
+}
+// 引用做边框颜色更改
+
+#app .page .theme-default-content  blockquote{
+  background-color: rgba(62, 175, 124, 0.1)
+  padding: 0.75rem 0 0.75rem 1rem
+  //border-left: 0.25rem solid #3eaf7c;
+  border-left: 0.25rem solid #7a94a7;
+  background-color: #dee5ea;
+  //color:#7a94a7; 
+  p{
+   color:#666
+  }
+}
+// 全局内容相关  h1-h6
+#app .page .theme-default-content h1
+,#app .page .theme-default-content h2
+,#app .page .theme-default-content h3
+,#app .page .theme-default-content h4
+,#app .page .theme-default-content h5
+,#app .page .theme-default-content h6{
+ font-weight: 500;
+ line-height: 1.5;
+ color: #000;
+}
+#app .page .theme-default-content h1,
+#app .page .theme-default-content h2{
+ font-size: 1.5rem;
+ }
+#app .page .theme-default-content h3{
+ font-size: 1.25rem;
+}
+#app .page .theme-default-content h4{
+ font-size: 1.125rem;
+}
+#app .page .theme-default-content h5,
+#app .page .theme-default-content h6{
+ font-size: 1.0rem;
+ }
+
+// 媒体查询
+@media (max-width: 719px){
+ #app .page .theme-default-content:not(.custom){
+  max-width: 100%
+  padding: 2rem 1.25rem
+ }
+}
+
+#app .navbar .nav-item > a:not(.external):hover,
+#app .navbar .nav-item > a:not(.external).router-link-active{
+   color:#7a94a7;
+   border-bottom-color:#7a94a7;
+}
+.nav-links a:hover, .nav-links a.router-link-active {
+    color: #7a94a7;
+}
+
+#app .page img{
+  max-width:480px;
+}
