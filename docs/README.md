@@ -11,6 +11,6 @@ features:
   - title: 技术栈
     details: JavaScript  / HTMLCSS / Vue / Nuxt.js /  Element / Vant 等。
   - title: 当前状态
-    details: 在职 / 不考虑机会 / 期望城市：西安 / 现在居住：西安/
+    details: 在职 / 考虑机会 / 期望城市：西安 / 现在居住：西安/
 footer: 耶温博客 | Copyright © 2021
 ---

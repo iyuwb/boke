@@ -14,41 +14,40 @@ module.exports = {
     docsBranch: 'master',
     editLinks: true,
     editLinkText: '点击编译该文档',
-    // 搜索
-    // algolia: {
-    //   apiKey: '<API_KEY>',
-    //   indexName: '<INDEX_NAME>'
-    // },
     lastUpdated: '最新更新时间',
     logo: 'http://iyuwb.cn/img/wenbo.jpg',
     nav: [
       {
-        text: 'Notes',
+        text: '日常笔记 ',
         link: '/Notes/个人简历'
-      }, {
-        text: 'JavaScript',
-        link: '/JavaScript/JavaScript-常用方法'
+      }, 
+      {
+        text: '前端基础',
+        items: [
+          { text: 'JavaScript', link: '/JavaScript/JavaScript-常用方法' },
+          { text: 'TypeScript', link: '/TypeScript/TypeScript基础' },
+          { text: 'HTMLCSS', link: '/HTMLCSS/HTML5CSS3' },
+        ]
       },
       {
-        text: 'HTMLCSS',
-        link: '/HTMLCSS/HTML5CSS3'
+        text: '前端框架',
+        items: [
+          { text: 'Vue', link: '/Vue/Vue进阶之旅' },
+          { text: 'React', link: '/React/React入门' }
+        ]
       },
       {
-        text: 'Vue',
-        link: '/Vue/Vue进阶之旅'
+        text: '插件使用',
+        items: [
+          { text: 'Openlayers', link: '/Openlayers/Openlayers' },
+        ]
       },
       {
-        text: 'TypeScript',
-        link: '/TypeScript/TypeScript基础'
-      },
-      {
-        text: 'React',
-        link: '/React/React入门'
-      },
-      {
-        text: '读书笔记',
-        link: '/读书笔记/[JavaScript高级程序设计]读书笔记'
-      },
+        text: '其他内容',
+        items: [
+          { text: '读书笔记', link: '/读书笔记/[JavaScript高级程序设计]读书笔记' },
+        ]
+      }
     ],
     sidebar: {
       '/JavaScript/': [
@@ -96,6 +95,9 @@ module.exports = {
         'Vue数据响应原理解析',
         'Vue进阶之旅',
         '在Vue2.0中使用Less与Sass',
+      ],
+      '/Openlayers/': [
+        'Openlayers',
       ],
     },
     displayAllHeaders: true 
