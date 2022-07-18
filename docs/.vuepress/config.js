@@ -7,7 +7,7 @@ module.exports = {
       href: 'http://iyuwb.cn/img/boke.ico'
     }]
   ],
-  base: '/boke/',
+  base: '/home/',
   themeConfig: {
     repo: 'iYevin/boke',
     docsDir: 'docs',
@@ -79,8 +79,7 @@ module.exports = {
         'GIT相关操作方法',
         '计算机基础-浏览器是运作原理',
         'HTTPS原理解析',
-        'HTTP请求详解',
-        '前端Vue代码格式'
+        'HTTP请求详解'
       ],
       '/读书笔记/': [
         '[JavaScript高级程序设计]读书笔记',
