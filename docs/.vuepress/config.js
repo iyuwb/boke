@@ -4,18 +4,18 @@ module.exports = {
   head: [
     ['link', {
       rel: 'icon',
-      href: 'http://iyuwb.cn/img/boke.ico'
+      href: 'images/boke.ico'
     }]
   ],
   base: '/home/',
   themeConfig: {
-    repo: 'iYevin/boke',
+    repo: 'iyuwb/boke',
     docsDir: 'docs',
     docsBranch: 'master',
     editLinks: true,
     editLinkText: '点击编译该文档',
     lastUpdated: '最新更新时间',
-    logo: 'http://iyuwb.cn/img/wenbo.jpg',
+    logo: 'images/wenbo.jpg',
     nav: [
       {
         text: '日常笔记 ',
