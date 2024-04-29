@@ -1,6 +1,6 @@
 # HTML
 
-## meta
+## `meta` 头部元数据设置
 
 >  head标签信息 ，可以指定一些信息
 >
@@ -29,14 +29,96 @@
 </head>
 ```
 
-其他类型-向特定网站指定特定信息
+其他类型-向特定网站指定特定信息，如下，当其他网站引入当前网站时，会展示特定的图片，标题，介绍
+
+> [!NOTE]
+>
+> 具体的网站有专有元数据协议，需要根据具体协议进行设置。
 
 ```html
 <head>
-  <meta name="yevin" content="Yevin blogs" />
-  <meta name="description" content="Yevin‘s blogs." />
+  <meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png" />
+  <meta property="og:description" content="The Mozilla Developer Network (MDN)" />
+  <meta property="og:title" content="Mozilla Developer Network" />
 </head>
 ```
+
+## `script` 引入JavaScript
+
+​	`defer`：解析完HTML之后再加载`script`
+
+```html
+<script src="./demo.js" defer></script>
+```
+
+## `lang` 语言属性
+
+​	可以根据需要设置语言，可以为整个`html`设置，也可以为单个元素设置。
+
+```html
+<html lang="zh-CN"></html>
+
+<div lang="en"> </div>
+```
+
+## `a` 超链接标签
+
+​	`download`：设置下载默认文件名
+
+###  `mailto`邮箱URL协议
+
+​	可以在邮箱链接后面拼接，邮件主题、内容、抄送人等等
+
+```html
+<a href="mailto:wenbo@gmail.com"></a>
+```
+
+## `<blockquote>`块引用 `q`行内引用
+
+​	引入其他地方的东西，需要用其包裹起来，并设置属性`cite`来指向引用的资源，不过不被浏览器支持，需要特殊处理才能展示引用链接。
+
+ ##  `abbr`缩略语
+
+```html
+<p>
+  我们使用
+  <abbr title="超文本标记语言（Hyper text Markup Language）">HTML</abbr>
+  来组织网页文档。
+</p>
+```
+
+## `address`联系方式
+
+## `sub`下标和`sup`上标
+
+```html
+<p>
+  咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。
+</p>
+<p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+```
+
+## `code`、`pre`、`var`、`kbd`、`samp`展示计算机代码
+
+## `time` 标记 时间和日期
+
+## `header`、`nav`、`main`、`aside`、`footer`语义化标签
+
+​	`header`： 页眉，顶部，头部
+
+​	`nav`：导航栏
+
+​	`main`：主内容
+
+​		主内容中还可以区分
+
+​		`article`：独立部分，一篇文章，与其他内容无关
+
+​		`section`：独立部分，把页面按功能分块
+
+​	`aside`：侧边栏
+
+​	`footer`：页脚，底部
 
 
 
